@@ -28,6 +28,8 @@ agentic-ai-assignments/
 ├── Agentic_AI-2/
 │   └── Assignment_2_Agentic_AI.ipynb
 ├── Agentic_AI-3/
+│   ├── Assignment_3_Agentic_AI.ipynb
+│   └── architecture_diagram.png
 ├── Agentic_AI-4/
 ├── JURY-1/
 │   └── Smart_Event_Analytics_Agent_Colab_Updated.ipynb
@@ -73,7 +75,23 @@ The scenario includes a real-world planning task:
 This assignment highlights how different reasoning styles behave under constraints and changing conditions.
 
 ### 3) Agentic_AI-3
-This folder is reserved for additional assignment work related to Agentic AI and autonomous systems. It may contain future coursework or lab exercises.
+This assignment focuses on building an autonomous Retrieval-Augmented Agent combining dual-tier memory, dynamic tool calling, and a self-correcting feedback loop.
+
+It explores:
+- Short-Term Memory (in-session volatile conversation buffer for dialogue continuity)
+- Long-Term Memory (persistent vector database with ChromaDB and semantic embeddings)
+- Production-Grade Tool Calling (code execution and live knowledge retrieval)
+- Feedback-Based Adaptation Loop (purging stale facts and updating stored knowledge upon user corrections)
+
+The implementation includes:
+- Multi-session factual persistence and recall across session resets
+- Python runtime execution sandbox (`python_code_executor`) for deterministic math and algorithms
+- Live Wikipedia search tool (`wikipedia_research`) for real-world factual retrieval
+- Memory invalidation and re-embedding upon user feedback
+- Systematic multi-turn benchmark scenarios measuring Retrieval Accuracy Rate and Tool-Call Success Rate
+- Architectural workflow diagrams for dual-memory agent interaction
+
+This assignment highlights how stateful agents maintain long-term user context, dynamically call external tools, and eliminate knowledge hallucinations through active feedback loops.
 
 ### 4) Agentic_AI-4
 This folder is reserved for further practical or academic tasks in the same domain. It may include additional implementations, experiments, or advanced agent-based scenarios.
@@ -143,10 +161,3 @@ This folder represents a practical collection of Agentic AI assignments covering
 ## Author
 
 Rohak Thakur
-
-```
-
-If you want, I can also give you:
-- a more professional academic README,
-- a simpler student-style README,
-- or a GitHub-ready version with badges and project sections.
