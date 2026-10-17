@@ -31,6 +31,8 @@ agentic-ai-assignments/
 │   ├── Assignment_3_Agentic_AI.ipynb
 │   └── architecture_diagram.png
 ├── Agentic_AI-4/
+│   ├── Assignment_4_agentic_ai.ipynb
+│   └── sequence_diagram.png
 ├── JURY-1/
 │   └── Smart_Event_Analytics_Agent_Colab_Updated.ipynb
 ├── .env
@@ -94,7 +96,22 @@ The implementation includes:
 This assignment highlights how stateful agents maintain long-term user context, dynamically call external tools, and eliminate knowledge hallucinations through active feedback loops.
 
 ### 4) Agentic_AI-4
-This folder is reserved for further practical or academic tasks in the same domain. It may include additional implementations, experiments, or advanced agent-based scenarios.
+This assignment focuses on designing a collaborative Multi-Agent System (MAS) for complex task completion with role specialization, structured communication, human validation, and adversarial peer review.
+
+It explores:
+- Role Specialization (decomposing tasks across distinct agent personas: System Architect, Lead Developer, and Security Critic)
+- Inter-Agent Communication Protocol (centralized Blackboard / Shared Task Board topology with typed message passing)
+- Human-in-the-Loop (HITL) Checkpoint (interactive review gate validating architecture specifications prior to code generation)
+- Conflict Detection & Autonomous Negotiation (adversarial code audits triggering iterative refactoring loops until security consensus is reached)
+
+The implementation includes:
+- Autonomous Software Engineering & Security Audit pipeline
+- End-to-end task execution: Secure User Authentication Service with bcrypt hashing, JWT issuance, and brute-force mitigation
+- Comprehensive multi-agent communication audit trail logging message types and payload histories
+- Comparative evaluation against a single-agent baseline highlighting vulnerability mitigation, modularity, and control
+- Interaction sequence diagrams illustrating the multi-agent orchestration lifecycle
+
+This assignment demonstrates how multi-agent collaboration with specialized roles and adversarial auditing produces significantly more robust, secure, and production-ready code than monolithic single-agent workflows.
 
 ### 5) JURY-1
 This folder contains a Smart Event Analytics Agent notebook focused on technical club performance analysis.
